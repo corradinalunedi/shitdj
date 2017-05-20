@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>ShitDJ&trade;</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/grid.css?id=1234">
+  <link rel="stylesheet" href="css/ui.css?id=1234">
+  <link rel="stylesheet" href="css/style.css?id=1294">
+  <link rel="stylesheet" href="slider/nouislider.css?id=1434">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="img/logo-favicon.png">
+
+</head>
+<body oncontextmenu="return false;">
+	<div id="wrapper" class="wrapper">
+    <div id="inner-wrapper" class="inner-wrapper" style="">
+	
+	<div class="twelve-col" style="margin-top:10px;">
+		<div class="five-col" style="">
+				<div class='embed-container'>
+					<div id="left_player"></div>
+				</div>
+		</div>
+		<div class="two-col" style="text-align: center"">
+			<br/><br/>
+			<div style=""><h5>Shit DJ&trade;</h5></div>
+			<img style="height:70px; width:auto;" src="img/logo-medium.png"/>
+		</div>
+		<div class="five-col last-col" style="">
+			<div class='embed-container'>
+				<div id="right_player"></div>
+			</div>
+		</div>
+	</div>
+	<div class="twelve-col" style="margin-top:5px;">
+		<div class="four-col">
+			<button class="next-button" onclick="nextVideo('left')">LOAD</button>			
+		</div>
+		<div class="four-col" style="margin-top:10px; text-align:center;">
+			<div id="slider"></div>
+		</div>
+		<div class="four-col last-col" style="text-align: right">
+			<button class="next-button" onclick="nextVideo('right')">LOAD</button>			
+		</div>	
+	</div>
+	
+	<div class="twelve-col" style="margin: 1px;">
+		<div class="four-col">&nbsp</div>
+		<div class="four-col" style="text-align:center">
+			<input id="query" type="text" placeholder="Search" onkeyup = "if (event.keyCode == 13)
+																	search()" />
+			
+			<!--HIDING SEARCH BUTTON (IS THE A POINT FOR IT)-->
+			<!--"if (event.keyCode == 13)
+                        document.getElementById('search-button').click()"  />	-->
+			<!--<button id="search-button" onclick="search()" class="queue-search-selector" 
+						style="visibility: hidden; font-size:12px">Search</button>-->
+		</div>
+		<div class="four-col">			
+		</div>
+	</div>
+	
+	<div class="twelve-col" style="margin-top:10px; height:95px">
+			<div class="one-col" style="margin-top:30px; text-align:left;">
+			<button class="next-prev-button">&#9668</button>		
+			</div>
+			<div id="search-thumb-0" class="two-col" style="">
+			</div>
+			<div id="search-thumb-1" class="two-col" style="">
+			</div>
+			<div id="search-thumb-2" class="two-col" style="">
+			</div>
+			<div id="search-thumb-3" class="two-col" style="">
+			</div>
+			<div id="search-thumb-4" class="two-col" style="">
+			</div>
+			<div class="one-col last-col" style="margin-top:30px; text-align:right;">
+				<button class="next-prev-button">&#9658</button>
+			</div>
+	</div>
+	<div class="twelve-col" style="height:105px">
+		<div class="one-col" style="text-align:center;">
+		&nbsp
+		</div>
+		<div id="search-title-0" class="two-col" style="font-size: 13px; text-align:left">
+		</div>			
+		<div id="search-title-1" class="two-col" style="font-size: 13px; text-align:left">
+		</div>		
+		<div id="search-title-2" class="two-col" style="font-size: 13px; text-align:left">
+		</div>		
+		<div id="search-title-3" class="two-col" style="font-size: 13px; text-align:left">
+		</div>		
+		<div id="search-title-4" class="two-col" style="font-size: 13px; text-align:left">
+		</div>	
+		<div class="one-col last-col" style="text-align:center">
+		&nbsp
+		</div>
+	</div>
+	<div class="twelve-col">
+		<div class="one-col" style="text-align:center;">
+		Queue:<br/>
+		</div>
+			<ul id="queue-list">
+			</ul>  
+		<div class="one-col last-col" style="text-align:center;">
+		&nbsp
+		</div>
+	</div>
+	<div class="twelve-col" style="text-align:center; font-size:12px;">
+		<div class="queue-titles" id="queue-title-0">HELLO - PUSSY.</div>
+		<div class="queue-titles" id="queue-title-1">HELLO - PUSSY.</div>
+		<div class="queue-titles" id="queue-title-2">HELLO - PUSSY.</div>
+		<div class="queue-titles" id="queue-title-3">HELLO - PUSSY.</div>
+		<div class="queue-titles" id="queue-title-4">HELLO - PUSSY.</div>
+		<div class="queue-titles" id="queue-title-5">HELLO - PUSSY.</div>
+		<div class="queue-titles" id="queue-title-6">HELLO - PUSSY.</div>
+		<div class="queue-titles" id="queue-title-7">HELLO - PUSSY.</div>
+		<div class="queue-titles" id="queue-title-8">HELLO - PUSSY.</div>
+		<div class="queue-titles" id="queue-title-9">HELLO - PUSSY.</div>
+	</div>
+	<div style="position: fixed; top:450px";>
+	</div>
+</div>
+</div>
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+  <!-- SCRIPTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="js/queue.js"></script>
+<script src="js/search.js" type="text/javascript"></script>        
+<script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
+<script src="slider/nouislider.min.js"></script>
+<script src="js/control_players.js"></script>
+<script src="js/sortable.min.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/youtube.js"></script>
+<script src="js/tools.js"></script>
+
+
+</html>

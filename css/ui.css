@@ -1,0 +1,59 @@
+.add-button {
+	opacity: 0.5;
+	position:absolute; 
+	z-index:1;
+	-webkit-appearance: none;
+	background-color:#ffffff;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:30px;
+	font-weight:bold;
+	padding:0px;
+	text-decoration:none;
+	height:35px;
+	width:30px;
+	top:53px;
+	left:88px;
+}
+.add-button:hover {
+	background-color:#e5e5e5;
+}
+.add-button:active {
+	background-color:#ffffff;
+}
+
+.remove-button {
+	opacity: 0.80;
+	position:absolute; 
+	z-index:1;
+	-webkit-appearance: none;
+	background-color:red;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:white;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:0px;
+	text-decoration:none;
+	height:21px;
+	width:14px;
+	top:25px;
+	left:60px;
+}
+.remove-button:hover {
+	background-color:#e5e5e5;
+}
+.remove-button:active {
+	background-color:#ffffff;
+}

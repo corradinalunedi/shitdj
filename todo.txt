@@ -1,0 +1,3 @@
+*deal with searches that yield no results or less than 5 slash results dont divide 5
+*REMOVE CSS CACHE BREAKING WHEN RELEASING
+*MAKE SEARCH THUMBS SMALLER and queue maybe bigger?
